@@ -12,7 +12,7 @@
   <meta name="description" content="The official website of Spoekle" />
   <meta name="author" content="Spoekle" />
 
-  <title>Spoekle's Dev Page | About</title>
+  <title>Spoekle's Commissions | Review</title>
   <link rel="icon" type="image/png" href="images/spoekle_icon.webp"/>
 
   <!-- slider stylesheet -->
@@ -22,8 +22,10 @@
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
@@ -49,7 +51,7 @@
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="about.html">About</a>
+                  <a class="nav-link" href="commissions.html">Commissions</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="experience.html">Experience</a>
@@ -72,30 +74,19 @@
       <div class="row">
         <div class="col-md-6">
           <div class="detail-box">
-            <h6>
-              About
-            </h6>
             <div class="custom_heading-container">
               <h2>
-                Who am I
+                Leave a review!
               </h2>
               <hr>
             </div>
             <p>
-              Hey there! My "name" is Spoekle, I am 17 years old and I live in the Netherlands. I am interested in prrogramming websites and of course gaming.
-              I also like doing photography occasionally or going for a walk. At the moment I am studying at a lower level of education called MBO, which will prepare me for a job.
-              The course I am following is comparable with Computer Science, which is what I will follow my current school up with. This won't be here in the Netherlands
-              probably, but in Florida, USA.
+              Reviews really help me with building trust. This is all to help potential future customers, so that they know they
+              can trust me with their money and time. You would be a superstar if you could leave one behind yourself!
             </p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/me.webp" alt="" style="border: 10px, rgb(18, 18, 18)">
-          </div>
-        </div>
       </div>
-
     </div>
   </section>
   <!-- end about section -->
@@ -103,17 +94,42 @@
   <!-- about section -->
   <section class="about_section layout_padding">
     <div class="container">
-      <div class="d-flex flex-column align-items-end">
-        <div class="custom_heading-container">
-          <hr>
-          <h2>
-          Why the States?
-          </h2>
-        </div>
-          <p>I am really interested in travelling and broadening my horizons. This is a perfect opportunity to do so, as I will surely have a place to stay there.
-            I hope that my plans stay this way so I can follow up my dreams.
-          </p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="custom_heading-container">
+              <h2>
+                Form
+              </h2>
+              <hr>
+            </div>
+            <p>
+            </p>
+          </div>
+        </div>  
       </div>
+      <form id="review-form">
+        <div>
+            <label for="name">Discord username:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating" required>
+            <option value="">Select a rating</option>
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+          </select>
+        </div>
+        <div>
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" required></textarea>
+        </div>
+        <button type="submit">Submit Review</button>
+      </form> 
     </div>
   </section>
     <!-- end about section -->
@@ -165,8 +181,24 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type='text/javascript' src='js/switch.js'></script>
-  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBiWD3CN8Aupl7_-j8NKD6vGhzeMLVHe7g",
+        authDomain: "spoekle-com-review.firebaseapp.com",
+        databaseURL: "https://spoekle-com-review-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "spoekle-com-review",
+        storageBucket: "spoekle-com-review.appspot.com",
+        messagingSenderId: "49839932889",
+        appId: "1:49839932889:web:7ec7a1667da03bd79b85c8",
+        measurementId: "G-CQVFQ21HQW",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+  <script type="text/javascript" src="js/send-review.js"></script>
 
 </body>
 </body>
