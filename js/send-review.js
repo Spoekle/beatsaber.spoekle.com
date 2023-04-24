@@ -16,3 +16,15 @@ var reviewForm = document.getElementById('review-form');
       console.error('Error writing review to Firebase Realtime Database:', error);
     });
   });
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      console.log("User is signed in");
+      // Your code to write to the database goes here
+    } else {
+      // User is signed out.
+      console.log("User is signed out");
+    }
+  });
+  
