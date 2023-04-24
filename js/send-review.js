@@ -17,6 +17,7 @@ var reviewForm = document.getElementById('review-form');
     });
   });
 
+reviewForm.addEventListener('submit', function(event) {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
@@ -27,4 +28,4 @@ var reviewForm = document.getElementById('review-form');
       console.log("User is signed out");
     }
   });
-  
+});
