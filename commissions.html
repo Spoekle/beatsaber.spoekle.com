@@ -98,62 +98,66 @@
   <!-- end about section -->
 
   <!-- about section -->
-  <section class="about_section layout_padding">
+  <section class="form_section layout_padding">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7 background_thing">
           <div class="detail-box">
             <div class="custom_heading-container">
               <h2>
-                Reviews
+                Request your song here!
               </h2>
               <hr>
             </div>
             <p>
-              Here you can find some reviews my "customers" have left behind after completion of their requests!
+              Here is a form you can fill out so you can get in contact with me!
             </p>
+            <div class="form-container">
+              <form action="https://formspree.io/f/meqwwoww" method="POST">
+                <label>
+                  Your Discord Username:
+                  <input name="Username" required pattern="^.{3,32}#[0-9]{4}$" placeholder="example#0001">
+                </label>
+                <label>
+                  Song Link:
+                  <input name="Song" required style="align-self: right;" placeholder="Link to YT, Soundcloud, Spotify, etc.">
+                </label>
+                <label>
+                  Desired Star Value:
+                  <span id="output" style="width: 60px;"></span>
+                  <input name="Star Range" type="range" min="1" max="13" value="1" id="starValue" class="slider" style="cursor: pointer;">
+                </label>
+                <label>
+                  Additional notes:
+                  <textarea name="Additional notes" placeholder="Think of fun gimmicks, V3 aspects, extra difficulties, etc."></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+              </form>
+            </div>
           </div>
         </div>
-        
       </div>
     </div>
   </section>
     <!-- end about section -->
 
-  <!-- socials section -->
-  <section class="socials_section layout_padding">
-    <div class="container">
-      <div class="socials_icon">
-        <div>
-          <a href="https://www.tiktok.com/@spoeklewastaken">
-            <img src="images/social_icon/tiktok.png" alt="">
-          </a>
-        </div>
-        <div>
-          <a href="https://twitter.com/Spoekle">
-            <img src="images/social_icon/twitter.png" alt="">
-          </a>
-        </div>
-        <div>
-          <a href="https://www.youtube.com/channel/UCAAbZeiuPwsbKqiD8QBubxw">
-            <img src="images/social_icon/youtube.png" alt="">
-          </a>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/spoekle/">
-            <img src="images/social_icon/insta.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div>
-        <p>
-          I spent too much time designing and editing this website, so please consider following me while you are
-          here. I can be found on the platforms that are linked here
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- end socials_section -->
+  <script>
+    var slider = document.getElementById("starValue");
+    var output = document.getElementById("output");
+    output.innerHTML = slider.value = 7 + " Stars";
+      
+    slider.oninput = function() {
+      if (slider.value <= 1){
+        output.innerHTML = this.value + " Star";
+      }
+
+      else {
+        output.innerHTML = this.value + " Stars";
+      }
+
+    }
+  </script>  
 
   <!-- footer section -->
   <section class="container-fluid footer_section">

@@ -298,8 +298,6 @@ a:focus {
   margin: 0;
 }
 
-/* funny beatsaber weee*/
-
 .background_thing {
   background-color: #191919;
   border-top-left-radius: 60px;
@@ -311,9 +309,6 @@ a:focus {
   padding-left: 90px;
   padding-right: 90px;
 }
-
-/* end funny beatsaber weee*/
-
 
 .more_section h2,
 .more_section p,
@@ -438,3 +433,89 @@ a:focus {
 }
 
 /* end footer section*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-container label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form-container label input[type="text"],
+.form-container label textarea {
+  margin-left: auto;
+}
+
+.placeholder_section {
+  font-family: "Poppins", sans-serif;
+  min-height: 900px;
+}
+
+.placeholder_section p {
+  margin-top: 45px;
+  font-size: 24px;
+}
+
+.placeholder_section h1 {
+  margin-top: 180px;
+  font-size: 100px;
+}
+
+.placeholder_section .img-box img {
+  width: 100%;
+}
+
+.placeholder_section h6 {
+  text-transform: uppercase;
+  color: #bdbbbb;
+  font-weight: bold;
+  margin: 0;
+}
+
+.form_section {
+  font-family: "Poppins", sans-serif;
+}
+
+.form_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form_section a {
+  display: inline-block;
+  padding: 8px 25px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
+  border-radius: 15px;
+  margin-top: 45px;
+  transition: 0.3s;
+}
+
+.form_section a:hover {
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.form_section p {
+  margin-top: 45px;
+}
+
+.form_section .img-box img {
+  width: 100%;
+}
+
+.form_section h6 {
+  text-transform: uppercase;
+  color: #bdbbbb;
+  font-weight: bold;
+  margin: 0;
+}
