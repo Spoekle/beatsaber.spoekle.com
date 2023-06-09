@@ -14,4 +14,3 @@ var randomNumber = Math.floor(Math.random()*facts.length);
 var element = facts[randomNumber];
 
 output.innerHTML = element;
-

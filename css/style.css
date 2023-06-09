@@ -519,3 +519,10 @@ a:focus {
   font-weight: bold;
   margin: 0;
 }
+
+.expander {
+  transform: scale(160%);
+  translate: -50%;
+  align-items: center;
+  z-index: 10;
+}

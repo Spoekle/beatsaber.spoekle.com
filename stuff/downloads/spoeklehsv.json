@@ -1,0 +1,363 @@
+{
+  "majorVersion": 3,
+  "minorVersion": 2,
+  "patchVersion": 0,
+  "isDefaultConfig": false,
+  "displayMode": "format",
+  "doIntermediateUpdates": true,
+  "timeDependencyDecimalPrecision": 1,
+  "timeDependencyDecimalOffset": 2,
+  "judgments": [
+    {
+      "threshold": 115,
+      "text": "<size=300%>15</size><size=70%>%n%T</size>",
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 114,
+      "text": "<size=250%>14</size><size=70%>%n%T</size>",
+      "color": [
+        0.9,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 113,
+      "text": "<size=225%>13</size><size=70%>%n%T</size>",
+      "color": [
+        0.7,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 112,
+      "text": "<size=200%>12</size><size=70%>%n%T</size>",
+      "color": [
+        0.6,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 111,
+      "text": "<size=200%>11</size><size=70%>%n%T</size>",
+      "color": [
+        0.5,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 110,
+      "text": "<size=150%>10</size><size=70%>%n%T</size>",
+      "color": [
+        0.48,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 109,
+      "text": "<size=150%>9</size><size=70%>%n%T</size>",
+      "color": [
+        0.46,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 108,
+      "text": "<size=150%>8</size><size=70%>%n%T</size>",
+      "color": [
+        0.44,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 107,
+      "text": "<size=150%>7</size><size=70%>%n%T</size>",
+      "color": [
+        0.42,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 106,
+      "text": "<size=150%>6</size><size=70%>%n%T</size>",
+      "color": [
+        0.4,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 105,
+      "text": "<size=125%>5</size><size=70%>%n%T</size>",
+      "color": [
+        0.3,
+        1,
+        1,
+        1
+      ],
+      "fade": true
+    },
+    {
+      "threshold": 104,
+      "text": "<size=100%>4</size><size=70%>%n%T</size>",
+      "color": [
+        0.2,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 103,
+      "text": "<size=100%>3</size><size=70%>%n%T</size>",
+      "color": [
+        0.1,
+        1,
+        1,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 102,
+      "text": "<size=100%>2</size><size=70%>%n%T</size>",
+      "color": [
+        0.1,
+        0.9,
+        0.9,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 101,
+      "text": "<size=100%>1</size><size=70%>%n%T</size>",
+      "color": [
+        0.1,
+        0.8,
+        0.8,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 100,
+      "text": "<size=100%>%s</size><size=70%>%n%T</size>",
+      "color": [
+        0.9,
+        0.5,
+        0.5,
+        1
+      ],
+      "fade": false
+    },
+    {
+      "threshold": 60,
+      "text": "<size=80%>%s</size><size=70%>%n%T</size>",
+      "color": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "fade": false
+    }
+  ],
+  "fixedPosition": null,
+  "targetPositionOffset": null,
+  "timeDependencyJudgments": [
+    {
+      "text": "40",
+      "threshold": 0.4
+    },
+    {
+      "text": "39",
+      "threshold": 0.39
+    },
+    {
+      "text": "38",
+      "threshold": 0.38
+    },
+    {
+      "text": "37",
+      "threshold": 0.37
+    },
+    {
+      "text": "36",
+      "threshold": 0.36
+    },
+    {
+      "text": "35",
+      "threshold": 0.35
+    },
+    {
+      "text": "34",
+      "threshold": 0.34
+    },
+    {
+      "text": "33",
+      "threshold": 0.33
+    },
+    {
+      "text": "32",
+      "threshold": 0.32
+    },
+    {
+      "text": "31",
+      "threshold": 0.31
+    },
+    {
+      "text": "30",
+      "threshold": 0.3
+    },
+    {
+      "text": "29",
+      "threshold": 0.29
+    },
+    {
+      "text": "28",
+      "threshold": 0.28
+    },
+    {
+      "text": "27",
+      "threshold": 0.27
+    },
+    {
+      "text": "26",
+      "threshold": 0.26
+    },
+    {
+      "text": "25",
+      "threshold": 0.25
+    },
+    {
+      "text": "24",
+      "threshold": 0.24
+    },
+    {
+      "text": "23",
+      "threshold": 0.23
+    },
+    {
+      "text": "22",
+      "threshold": 0.22
+    },
+    {
+      "text": "21",
+      "threshold": 0.21
+    },
+    {
+      "text": "20",
+      "threshold": 0.2
+    },
+    {
+      "text": "19",
+      "threshold": 0.19
+    },
+    {
+      "text": "18",
+      "threshold": 0.18
+    },
+    {
+      "text": "17",
+      "threshold": 0.17
+    },
+    {
+      "text": "16",
+      "threshold": 0.16
+    },
+    {
+      "text": "15",
+      "threshold": 0.15
+    },
+    {
+      "text": "14",
+      "threshold": 0.14
+    },
+    {
+      "text": "13",
+      "threshold": 0.13
+    },
+    {
+      "text": "12",
+      "threshold": 0.12
+    },
+    {
+      "text": "11",
+      "threshold": 0.11
+    },
+    {
+      "text": "10",
+      "threshold": 0.1
+    },
+    {
+      "text": "9",
+      "threshold": 0.09
+    },
+    {
+      "text": "8",
+      "threshold": 0.08
+    },
+    {
+      "text": "7",
+      "threshold": 0.07
+    },
+    {
+      "text": "6",
+      "threshold": 0.06
+    },
+    {
+      "text": "5",
+      "threshold": 0.05
+    },
+    {
+      "text": "4",
+      "threshold": 0.04
+    },
+    {
+      "text": "3",
+      "threshold": 0.03
+    },
+    {
+      "text": "2",
+      "threshold": 0.02
+    },
+    {
+      "text": "1",
+      "threshold": 0.01
+    }
+  ]
+}
